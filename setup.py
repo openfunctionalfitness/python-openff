@@ -28,7 +28,13 @@ setuptools.setup(
     author_email='554c46@gmail.com',
     license='Apache License 2.0',
     packages=['openff'],
-    install_requires=[],
+    install_requires=[
+        "numpy>=1,<2",
+        "pandas>=2,<3",
+        "openpyxl>=3,<4",
+        "scipy>=1,<2",
+        "unidecode>=1,<2"
+    ],
     python_requires='>=3.7',
     zip_safe=True
 )
