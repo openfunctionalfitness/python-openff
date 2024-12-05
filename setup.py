@@ -27,7 +27,7 @@ setuptools.setup(
     author='Ulf Hamster',
     author_email='554c46@gmail.com',
     license='Apache License 2.0',
-    packages=['python_openff'],
+    packages=['openff'],
     install_requires=[],
     python_requires='>=3.7',
     zip_safe=True
