@@ -6,12 +6,24 @@
 
 ## Usage
 
-Table of Contents
+```py
+import openff.transform as offt
 
-* [Use Case 1](#use-case-1)
+y = offt.parse_cap("CAP +36")
+# 36
 
+y = offt.parse_time("02:52")
+# 172 sec.
 
-### Use Case 1
+y = offt.parse_time("24:31.18")
+# 1471.18 sec.
+
+y = offt.parse_time("1:15:59")
+# 4559 sec.
+
+y = extrap_cap2sec("cap +150", 10, 200)
+# 800 sec.
+```
 
 
 ## Appendix
@@ -32,7 +44,6 @@ source .venv/bin/activate
 pip install --upgrade pip
 pip install -r requirements.txt --no-cache-dir
 pip install -r requirements-dev.txt --no-cache-dir
-pip install -r requirements-demo.txt --no-cache-dir
 ```
 
 (If your git repo is stored in a folder with whitespaces, then don't use the subfolder `.venv`. Use an absolute path without whitespaces.)
