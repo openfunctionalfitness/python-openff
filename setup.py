@@ -19,17 +19,16 @@ def get_version(path):
 
 
 setuptools.setup(
-    name='template_pypi',
-    version=get_version("template_pypi/__init__.py"),
-    description='lorem ipsum',
+    name='python-openff',
+    version=get_version("python_openff/__init__.py"),
+    description='utility functions to process results of functional fitness competitions',
     long_description=read('README.rst'),
-    url='http://github.com/myorg/template_pypi',
-    author='John Doe',
+    url='http://github.com/openfunctionalfitness/python-openff',
+    author='Ulf Hamster',
     author_email='554c46@gmail.com',
     license='Apache License 2.0',
-    packages=['template_pypi'],
+    packages=['python_openff'],
     install_requires=[],
-    # scripts=['scripts/examplescript.py'],
-    python_requires='>=3.6',
+    python_requires='>=3.7',
     zip_safe=True
 )

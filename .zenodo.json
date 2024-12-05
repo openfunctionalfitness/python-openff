@@ -3,12 +3,12 @@
     "name": "Ulf Hamster",
     "orcid": "0000-0002-0440-4868"
   }],
-  "title": "template_pypi: Lorem Ipsum",
+  "title": "Utility functions to process results of functional fitness competitions",
   "description": "Lorem Ipsum.",
   "license": "Apache-2.0",
   "upload_type": "software",
   "keywords": [
-    "keyword 1",
-    "keyword 2"
+    "functional fitness",
+    "fitness competitions"
   ]
 }
