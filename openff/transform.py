@@ -5,10 +5,11 @@ def parse_cap(s):
     """Convert the capped scored string into a number,
     e.g. 'CAP+ 123' to 123.0
     """
-    try: 
+    try:
         s2 = s.replace(" ", "").lower()
         return float(s2.split("cap+")[-1])
-    except:
+    except Exception as err:
+        print(err)
         return None
 
 
@@ -22,8 +23,9 @@ def parse_time(timestr):
         tc = timestr.split(':')
         ftr = [3600, 60, 1]
         ftr = ftr[(3 - len(tc)):]
-        return float(sum([a*b for a,b in zip(ftr, map(int, tc))]) + micro)
-    except:
+        return float(sum([a * b for a, b in zip(ftr, map(int, tc))]) + micro)
+    except Exception as err:
+        print(err)
         return None
 
 

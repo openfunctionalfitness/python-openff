@@ -21,7 +21,10 @@ def get_version(path):
 setuptools.setup(
     name='python-openff',
     version=get_version("python_openff/__init__.py"),
-    description='utility functions to process results of functional fitness competitions',
+    description=(
+        "utility functions to process results of "
+        "functional fitness competitions"
+    ),
     long_description=read('README.rst'),
     url='http://github.com/openfunctionalfitness/python-openff',
     author='Ulf Hamster',
